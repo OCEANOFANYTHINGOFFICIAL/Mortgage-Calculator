@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description"
+            content="The Mortgage Calculator is a web application that allows users to calculate mortgage payments online. It provides a simple and convenient way for users to estimate their monthly mortgage payments based on the loan amount, interest rate, and loan term." />
+        <meta name="keywords"
+            content="Mortgage Calculator, Loan Calculator, Mortgage Payment Calculator, Mortgage Calculator Online" />
+        <meta name="author" content="OCEAN OF ANYTHING" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        <meta name="bingbot" content="index, follow" />
+        <meta property="og:title" content="Mortgage Calculator" />
+        <meta property="og:description"
+            content="The Mortgage Calculator is a web application that allows users to calculate mortgage payments online. It provides a simple and convenient way for users to estimate their monthly mortgage payments based on the loan amount, interest rate, and loan term." />
+        <meta property="og:image" content="https://oceanofanythingofficial.github.io/Mortgage-Calculator/preview.png" />
+        <meta property="og:url" content="https://oceanofanythingofficial.github.io/Mortgage-Calculator/" />
+        <meta property="og:site_name" content="Mortgage Calculator" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale:alternate" content="en_GB" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Oceanofanything" />
+        <meta name="twitter:creator" content="@OceanAnything" />
+        <meta name="twitter:title" content="Mortgage Calculator" />
+        <meta name="twitter:description"
+            content="The Mortgage Calculator is a web application that allows users to calculate mortgage payments online. It provides a simple and convenient way for users to estimate their monthly mortgage payments based on the loan amount, interest rate, and loan term." />
+        <meta name="twitter:image"
+            content="https://oceanofanythingofficial.github.io/Mortgage-Calculator/preview.png" />
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <title>Mortgage Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="loan-calculator">
+            <div class="top">
+                <h2>Mortgage Calculator</h2>
+                <form action="#">
+                    <div class="group">
+                        <div class="title">Amount (₹)</div>
+                        <input type="number" value=" " class="loan-amount" placeholder="Total amount" />
+                    </div>
+
+                    <div class="group">
+                        <div class="title">Down payment (₹)</div>
+                        <input type="number" value=" " class="down-payment" placeholder="Down Payment" />
+                    </div>
+
+                    <div class="group">
+                        <div class="title">Interest Rate (%)</div>
+                        <input type="number" value=" " class="interest-rate" placeholder="Interest rate in %" />
+                    </div>
+
+                    <div class="group">
+                        <div class="title">Tenure (Months)</div>
+                        <input type="number" value=" " class="loan-tenure" placeholder="Tenure in months" />
+                    </div>
+                </form>
+            </div>
+            <div class="myBtn">
+                <button class="calculate-btn controlButtons">Calculate</button>
+                <button class="resetBtn controlButtons">Reset</button>
+            </div>
+
+            <div class="result">
+                <div class="left">
+                    <div class="loan-emi">
+                        <h3>Loan EMI</h3>
+                        <div class="value">0</div>
+                    </div>
+
+                    <div class="total-interest">
+                        <h3>Total Interest Payable</h3>
+                        <div class="value">0</div>
+                    </div>
+
+                    <div class="total-amount">
+                        <h3>Total Amount</h3>
+                        <div class="value">0</div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <canvas id="myChart" width="300" height="300"></canvas>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+
+</html>
